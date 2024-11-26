@@ -1,0 +1,96 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #044B5A;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.indietro-header{
+    position: absolute;
+    left: 30px;
+    top: 37%;
+}
+.header img{
+    width: 53%;
+    margin-left: 8rem;
+}
+.header > div > button{
+    padding: 10px 30px;
+    background-color: white;
+    color: #044B5A;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    text-align: center;
+}
+.header > div > button > img {
+    width: 20px;
+    margin-left: 0;
+}
+.header > div:first-of-type {
+    width: 50%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 9vh;
+        background-color: #044B5A;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header > div:first-of-type {
+        width: 50%;
+        margin-left: 10px;
+    }
+    .header > div > button{
+        border-radius: 30px;
+        font-weight: 500;
+        padding: 8px 12px;
+    }
+    .header > svg {
+        margin-left: 10px;
+    }
+    .header img{
+        width: 95%;
+        margin-left: 0.2rem;
+    }
+    .header button > img {
+        width: 24px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px)  {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 12vh;
+        background-color: #044B5A;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header > div:first-of-type {
+        width: 50%;
+    }
+    .header > div > img{
+        width: 50%;
+        margin-left: 0.2rem;
+    }
+}

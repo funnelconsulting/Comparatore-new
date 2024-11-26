@@ -1,0 +1,94 @@
+.progress-container2 {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+  }
+  .step-container{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-container > img {
+    width: 60%;
+  }
+  .progress-labels2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .progress-label2 {
+    font-size: 12px;
+    color: #ccc;
+    transition: color 0.4s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .progress-label2:nth-of-type(2){
+    margin: 0 5px;
+  }
+  
+  .progress-label2.active-label {
+    color: #044B5A; /* Colore che si illumina quando attivo */
+    font-weight: bold;
+  }
+  
+  .progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .progress-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .progress-item span {
+    font-size: 11px;
+  }
+  
+  .progress-item.active {
+    border-color: #044B5A;
+    background-color: #044B5A;
+    color: white;
+  }
+  
+  .progress-bar {
+    min-width: 140px;
+    height: 2px;
+    background-color: #ccc;
+    transition: background-color 0.4s ease;
+  }
+  
+  .progress-bar.fill {
+    background-color: #044B5A;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .step-container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-container > img {
+      width: 90%;
+    }
+  }
+  
