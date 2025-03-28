@@ -215,7 +215,7 @@ const ParlaConSara = () => {
             </div>
             <div className='cta-sara'>
                 <p>Durata <font color='#FF6600'>15 minuti</font> | 100% gratuita | 100% di studenti soddisfatti </p>
-                <button onClick={handleSchedule}>Prenota una call</button>
+                <button id='btn-book-call-2' className='book-call-btn' onClick={handleSchedule}>Prenota una call</button>
                 {/*<hr />
                 <p>Oppure</p>
                 <button onClick={whatsClick}>Scrivile su Whatsapp</button>*/}

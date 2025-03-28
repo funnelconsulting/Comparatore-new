@@ -120,11 +120,12 @@ const PrezziSlider = ({ min, max, step, onChange, rangeMax }) => {
     };
   
     return (
-      <div className='barra-prezzi'>
-        <div className='price-range-max'  style={{ position: 'relative', left: `${24.5714 + (((value[1] - 3000) / 500) * 7)}%` }}>
+      <div className='barra-prezzi' id='price-slider'>
+        <div id='price-display' className='price-range-max'  style={{ position: 'relative', left: `${24.5714 + (((value[1] - 3000) / 500) * 7)}%` }}>
             {value[1]}€
           </div>
         <Slider
+          id='new-budget-range'
           min={min}
           max={max}
           step={step}
@@ -466,10 +467,11 @@ const ComparatoreLeadSystem = () => {
           </div>}
         </div>*/}
         <hr className='separatore' />
-        <div className='comparatore-domande'>
+        <div className='comparatore-domande' id='form-comparatore-new'>
             <div className='domanda'>
                 <label>Quale <b>tipologia</b> di corso di laurea ti interessa?</label>
                 <select 
+                id='new-course-type-select'
                 className={`${degreeType !== "" ? 'filled' : missingField.includes("Tipo di laurea") ? 'campo-mancante' : ''}`} 
                 value={degreeType} 
                 onChange={(e) => {handleChange(e, setDegreeType); handleChange(e, setOrigDegreeType)}} required>
@@ -485,6 +487,7 @@ const ComparatoreLeadSystem = () => {
                 <label>A quale <b>corso di laurea</b> sei interessato?</label>
                 {degreeType !== "" ? (
                 <select 
+                id='new-degree-select'
                 className={`${desiredDegree !== "" ? 'filled' : missingField.includes("Corso di laurea") ? 'campo-mancante' : ''}`}
                 value={desiredDegree} 
                 onChange={(e) => {handleChange(e, setDesiredDegree); handleChange(e, setOrigDesiredDegree)}} required>
@@ -498,6 +501,7 @@ const ComparatoreLeadSystem = () => {
                 ) : (
                 <select 
                 disabled
+                id='new-degree-select'
                 className={`${desiredDegree !== "" ? 'filled' : missingField.includes("Corso di laurea") ? 'campo-mancante' : ''}`}
                 value={desiredDegree} 
                 onChange={(e) => {handleChange(e, setDesiredDegree); handleChange(e, setOrigDesiredDegree)}} required>
@@ -597,7 +601,7 @@ const ComparatoreLeadSystem = () => {
             <div className='domanda dn'>
               <label>Raccontaci quali sono <b>le tue necessità</b></label>
               <p className='piccolo-arancione'>(seleziona una di queste scelte)</p>
-              <div className='button-necessità'>
+              <div className='button-necessità' id='new-needs-buttons'>
                 <button onClick={() => setNecessità("Supporto per Iscrizione")} className={necessità === "Supporto per Iscrizione" && "active-necessità"}>Supporto per Iscrizione</button>
                 <button onClick={() => setNecessità("Riconoscimento CFU per cambio università")} className={necessità === "Riconoscimento CFU per cambio università" && "active-necessità"}>Riconoscimento CFU per cambio università</button>
                 <button onClick={() => setNecessità("Laurea per Scatto di carriera")} className={necessità === "Laurea per Scatto di carriera" && "active-necessità"}>Laurea per Scatto di carriera</button>
@@ -607,6 +611,7 @@ const ComparatoreLeadSystem = () => {
             <div className='domanda'>
                 <label>Ti riconosci in uno di <b>Questi profili</b>?</label>
                 <select 
+                id='new-profile-select'
                 className={`${categories !== "" ? 'filled' : missingField.includes("Categorie") ? 'campo-mancante' : ''}`} 
                 value={categories} 
                 onChange={(e) => handleChange(e, setCategories)} required>
@@ -623,6 +628,7 @@ const ComparatoreLeadSystem = () => {
             <div className='domanda domanda-autocomplete'>
                 <label>In quale <b>provincia</b> vivi?</label>
                 <AutocompleteCustom
+                    id='new-province-autocomplete'
                     items={filteredProvinces}
                     value={città}
                     onChange={handleChangeProvincia}
@@ -635,6 +641,7 @@ const ComparatoreLeadSystem = () => {
                 <div className='domanda domanda-input'>
                     <label>Nome</label>
                     <input
+                    id='new-name-input'
                     required
                     className={`${firstName !== "" ? 'filled' : missingField.includes("Nome") ? 'campo-mancante' : ''}`}
                     type="text"
@@ -645,6 +652,7 @@ const ComparatoreLeadSystem = () => {
                 <div className='domanda domanda-input'>
                     <label>Cognome</label>
                     <input
+                    id='new-surname-input'
                     required
                     className={`${lastName !== "" ? 'filled' : missingField.includes("Cognome") ? 'campo-mancante' : ''}`}
                     type="text"
@@ -655,6 +663,7 @@ const ComparatoreLeadSystem = () => {
                 <div className='domanda domanda-input'>
                     <label>Email</label>
                     <input
+                    id='new-email-input'
                     required
                     className={`${email !== "" ? 'filled' : missingField.includes("Email") ? 'campo-mancante' : ''}`}
                     type="email"
@@ -665,6 +674,7 @@ const ComparatoreLeadSystem = () => {
                 <div className='domanda domanda-input'>
                     <label>Telefono (valido per il codice di verifica)</label>
                     <input
+                    id='new-phone-input'
                     required
                     className={`${phone !== "" ? 'filled' : missingField.includes("Numero di telefono") ? 'campo-mancante' : ''}`}
                     type="tel"
@@ -676,6 +686,7 @@ const ComparatoreLeadSystem = () => {
             </div>
             <div className='domanda-checkbox dck1'>
                 <input
+                id='new-privacy-checkbox'
                 type='checkbox'
                 required
                 value={accept}
@@ -688,6 +699,7 @@ const ComparatoreLeadSystem = () => {
             </div>
             <div className='domanda-checkbox dck2' style={{textAlign: 'left', display: 'flex', justifyContent:'center', gap: '0.4rem', paddingLeft: '12px'}}>
                 <input
+                id='new-data-processing-checkbox'
                 type='checkbox'
                 required
                 value={acceptTreatment}
@@ -700,7 +712,7 @@ const ComparatoreLeadSystem = () => {
             </div>
         </div>
         {!isLoad ? 
-        <button onClick={handleSubmit} className='button-prosegui'>Scopri tutti i corsi</button> : 
+        <button id='comparatore-new-discover-courses-btn' onClick={handleSubmit} className='button-prosegui'>Scopri tutti i corsi</button> : 
         <button className='button-prosegui'>Invio in corso..</button>
         }
         <p className='p-under-btn'>Verrai contattato solo da un <font color='#F37E0E'>nostro orientatore</font>, che, se vuoi, ti supporterà nella scelta, nelle agevolazioni e nella burocrazia</p>

@@ -51,7 +51,7 @@ const ThanksSara = () => {
         </div>*/}
         {/*<p>Grazie <i style={{fontWeight: '500'}}>{firstName ? firstName : ''}</i>!</p>*/}
         <div className='recap-sara'>
-            <p>Riceverai una chiamata da Sara in <b style={{fontWeight: '500'}}>data:</b></p>
+            <p>Riceverai una chiamata dal tuo orientatore in <b style={{fontWeight: '500'}}>data:</b></p>
             <div><p>{giorno && giorno}</p></div>
             <p style={{fontWeight: '500'}}>Alle ore</p>
             <div><p>{orario && orario}</p></div>

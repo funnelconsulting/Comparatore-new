@@ -364,7 +364,7 @@ const SchedaCorso = () => {
                           ) : ateneo === "Unipegaso" ? (
                             <img alt='logo ateneo' src={unipegaso} />
                           ) : ateneo === "Uninettuno" ? (
-                            <img alt='logo ateneo' src={uninettuno} />
+                            null //<img alt='logo ateneo' src={uninettuno} />
                           ) : ateneo === "Mercatorum" ? (
                             <img alt='logo ateneo' src={unimerc} />
                           ) : ateneo === "Unifortunato" ? (
@@ -391,7 +391,7 @@ const SchedaCorso = () => {
                           ) : ateneo === "Unipegaso" ? (
                             <img alt='logo ateneo' src={unipegaso} />
                           ) : ateneo === "Uninettuno" ? (
-                            <img alt='logo ateneo' src={uninettuno} />
+                            null //<img alt='logo ateneo' src={uninettuno} />
                           ) : ateneo === "Mercatorum" ? (
                             <img alt='logo ateneo' src={unimerc} />
                           ) : ateneo === "Unifortunato" ? (
@@ -540,7 +540,7 @@ const SchedaCorso = () => {
                           ) : ateneo === "Unipegaso" ? (
                             <img alt='logo ateneo' src={unipegasoT} />
                           ) : ateneo === "Uninettuno" ? (
-                            <img alt='logo ateneo' src={uninettunoT} />
+                            null //<img alt='logo ateneo' src={uninettunoT} />
                           ) : ateneo === "Mercatorum" ? (
                             <img alt='logo ateneo' src={unimercT} />
                           ) : ateneo === "Unifortunato" ? (

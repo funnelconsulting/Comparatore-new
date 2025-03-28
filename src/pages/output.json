@@ -82,33 +82,6 @@
   },
   {
     "Tipologia": "Laurea Triennale",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Scienze della Comunicazione (Digital Marketing)",
-    "Costo": "Da € 5900 a € 5900",
-    "Ateneo": "eCampus",
-    "min": 5900,
-    "max": 5900
-  },
-  {
-    "Tipologia": "Laurea Triennale",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Scienze della Comunicazione (Influencer)",
-    "Costo": "Da € 2600 a € 5900",
-    "Ateneo": "eCampus",
-    "min": 2600,
-    "max": 5900
-  },
-  {
-    "Tipologia": "Laurea Triennale",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione Digitale e Social Media",
-    "Costo": "Da € 4000 a € 5000",
-    "Ateneo": "Unicusano",
-    "min": 4000,
-    "max": 5000
-  },
-  {
-    "Tipologia": "Laurea Triennale",
     "Area": "Economia",
     "Corsi di laurea + (non lo so)": "Diritto ed Economia delle Imprese",
     "Costo": "Da € 2500 a € 2500",
@@ -1252,16 +1225,7 @@
   },
   {
     "Tipologia": "Laurea Magistrale",
-    "Area": "Archeologia",
-    "Corsi di laurea + (non lo so)": "Letteratura, Lingua e Cultura Italiana (Promozione Culturale)",
-    "Costo": "Da € 2600 a € 3900",
-    "Ateneo": "eCampus",
-    "min": 2600,
-    "max": 3900
-  },
-  {
-    "Tipologia": "Laurea Magistrale",
-    "Area": "Digital Marketing",
+    "Area": "Scienze della Comunicazione",
     "Corsi di laurea + (non lo so)": "Comunicazione Digitale e Marketing",
     "Costo": "Da € 1600 a € 3000",
     "Ateneo": "Mercatorum",
@@ -1270,21 +1234,12 @@
   },
   {
     "Tipologia": "Laurea Magistrale",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione Digitale (Cultural and Social Media)",
-    "Costo": "Da € 4000 a € 5000",
-    "Ateneo": "Unicusano",
-    "min": 4000,
-    "max": 5000
-  },
-  {
-    "Tipologia": "Laurea Magistrale",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione Digitale (Game Industry Management and Creative Direction)",
-    "Costo": "Da € 4000 a € 5000",
-    "Ateneo": "Unicusano",
-    "min": 4000,
-    "max": 5000
+    "Area": "Archeologia",
+    "Corsi di laurea + (non lo so)": "Letteratura, Lingua e Cultura Italiana (Promozione Culturale)",
+    "Costo": "Da € 2600 a € 3900",
+    "Ateneo": "eCampus",
+    "min": 2600,
+    "max": 3900
   },
   {
     "Tipologia": "Laurea Magistrale",
@@ -3011,8 +2966,8 @@
     "Corsi di laurea + (non lo so)": "Nutrizione e Dietologia",
     "Costo": "1.500,00€",
     "Ateneo": "eCampus",
-    "min": 1500,
-    "max": 1500
+    "min": 3000,
+    "max": 3000
   },
   {
     "Tipologia": "Master 1° livello",
@@ -3232,12 +3187,102 @@
   },
   {
     "Tipologia": "Master 1° livello",
-    "Area": "Design",
-    "Corsi di laurea + (non lo so)": "Digital graphic designer",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Global Journalism",
+    "Costo": "2.500,00€",
+    "Ateneo": "Uninettuno",
+    "min": 2500,
+    "max": 2500
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Digital marketing specialist",
     "Costo": "4.950,00€",
     "Ateneo": "eCampus",
     "min": 4950,
     "max": 4950
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Esperto management della comunicazione",
+    "Costo": "2.600,00€",
+    "Ateneo": "eCampus",
+    "min": 2600,
+    "max": 2600
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Storytelling",
+    "Costo": "3.900,00€",
+    "Ateneo": "eCampus",
+    "min": 3900,
+    "max": 3900
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Comunicazione d'impresa",
+    "Costo": "2.200,00€",
+    "Ateneo": "Unipegaso",
+    "min": 2200,
+    "max": 2200
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Comunicazione e Social Marketing nelle Imprese Industriali",
+    "Costo": "da 600 a 1000",
+    "Ateneo": "Unipegaso",
+    "min": 600,
+    "max": 1000
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Comunicazione, scrittura e storytelling",
+    "Costo": "da 1600 a 2100",
+    "Ateneo": "Unipegaso",
+    "min": 1600,
+    "max": 2100
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Digital Marketing, Social Media Communication & eCommerce Management",
+    "Costo": "da 2000 a 2500",
+    "Ateneo": "Unipegaso",
+    "min": 2000,
+    "max": 2500
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Social Media Manager",
+    "Costo": "da 1600 a 2100",
+    "Ateneo": "Unipegaso",
+    "min": 1600,
+    "max": 2100
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Virtual Community Manager",
+    "Costo": "da 650 a 800",
+    "Ateneo": "Unipegaso",
+    "min": 650,
+    "max": 800
+  },
+  {
+    "Tipologia": "Master 1° livello",
+    "Area": "Design",
+    "Corsi di laurea + (non lo so)": "Digital graphic designer",
+    "Costo": "3.950,00€",
+    "Ateneo": "eCampus",
+    "min": 3950,
+    "max": 3950
   },
   {
     "Tipologia": "Master 1° livello",
@@ -3585,10 +3630,10 @@
     "Tipologia": "Master 1° livello",
     "Area": "Professioni sanitarie",
     "Corsi di laurea + (non lo so)": "Osteopatia",
-    "Costo": "1.500,00€",
+    "Costo": "3.000,00€",
     "Ateneo": "eCampus",
     "min": 1500,
-    "max": 1500
+    "max": 3000
   },
   {
     "Tipologia": "Master 1° livello",
@@ -4294,96 +4339,6 @@
   },
   {
     "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Global Journalism",
-    "Costo": "2.500,00€",
-    "Ateneo": "Uninettuno",
-    "min": 2500,
-    "max": 2500
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Digital marketing specialist",
-    "Costo": "4.950,00€",
-    "Ateneo": "eCampus",
-    "min": 4950,
-    "max": 4950
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Esperto management della comunicazione",
-    "Costo": "2.600,00€",
-    "Ateneo": "eCampus",
-    "min": 2600,
-    "max": 2600
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Storytelling",
-    "Costo": "3.900,00€",
-    "Ateneo": "eCampus",
-    "min": 3900,
-    "max": 3900
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione d'impresa",
-    "Costo": "2.200,00€",
-    "Ateneo": "Unipegaso",
-    "min": 2200,
-    "max": 2200
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione e Social Marketing nelle Imprese Industriali",
-    "Costo": "da 600 a 1000",
-    "Ateneo": "Unipegaso",
-    "min": 600,
-    "max": 1000
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Comunicazione, scrittura e storytelling",
-    "Costo": "da 1600 a 2100",
-    "Ateneo": "Unipegaso",
-    "min": 1600,
-    "max": 2100
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Digital Marketing, Social Media Communication & eCommerce Management",
-    "Costo": "da 2000 a 2500",
-    "Ateneo": "Unipegaso",
-    "min": 2000,
-    "max": 2500
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Social Media Manager",
-    "Costo": "da 1600 a 2100",
-    "Ateneo": "Unipegaso",
-    "min": 1600,
-    "max": 2100
-  },
-  {
-    "Tipologia": "Master 1° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Virtual Community Manager",
-    "Costo": "da 650 a 800",
-    "Ateneo": "Unipegaso",
-    "min": 650,
-    "max": 800
-  },
-  {
-    "Tipologia": "Master 1° livello",
     "Area": "Informatica",
     "Corsi di laurea + (non lo so)": "Data Protection Officer: Cyber & Risk Manager",
     "Costo": "4.200,00€",
@@ -4512,19 +4467,19 @@
     "Tipologia": "Master 1° livello",
     "Area": "Project management",
     "Corsi di laurea + (non lo so)": "Project Management nel Settore delle Costruzioni",
-    "Costo": "da 800 a 1200",
+    "Costo": "da 1300 a 1500",
     "Ateneo": "Unipegaso",
-    "min": 800,
-    "max": 1200
+    "min": 1300,
+    "max": 1500
   },
   {
     "Tipologia": "Master 1° livello",
     "Area": "Project management",
     "Corsi di laurea + (non lo so)": "Risk and Disaster Management",
-    "Costo": "da 800 a 1200",
+    "Costo": "da 1300 a 1500",
     "Ateneo": "Unipegaso",
-    "min": 800,
-    "max": 1200
+    "min": 1300,
+    "max": 1500
   },
   {
     "Tipologia": "Master 1° livello",
@@ -5005,6 +4960,24 @@
   },
   {
     "Tipologia": "Master 2° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Digital Marketing (in lingua inglese)",
+    "Costo": "3.500,00€",
+    "Ateneo": "Unimarconi",
+    "min": 3500,
+    "max": 3500
+  },
+  {
+    "Tipologia": "Master 2° livello",
+    "Area": "Digital Marketing",
+    "Corsi di laurea + (non lo so)": "Esperto management della comunicazione",
+    "Costo": "2.600,00€",
+    "Ateneo": "eCampus",
+    "min": 2600,
+    "max": 2600
+  },
+  {
+    "Tipologia": "Master 2° livello",
     "Area": "Infermieristica",
     "Corsi di laurea + (non lo so)": "Management per la Direzione di Struttura Complessa",
     "Costo": "1.700,00€",
@@ -5131,15 +5104,6 @@
   },
   {
     "Tipologia": "Master 2° livello",
-    "Area": "Digital Marketing",
-    "Corsi di laurea + (non lo so)": "Esperto management della comunicazione",
-    "Costo": "2.600,00€",
-    "Ateneo": "eCampus",
-    "min": 2600,
-    "max": 2600
-  },
-  {
-    "Tipologia": "Master 2° livello",
     "Area": "Informatica",
     "Corsi di laurea + (non lo so)": "Diritto antitrust, mercati e big data - DAMB",
     "Costo": "1.600,00€",
@@ -5182,5 +5146,41 @@
     "Ateneo": "Unipegaso",
     "min": 800,
     "max": 1200
+  },
+  {
+    "Tipologia": "Laurea Triennale",
+    "Area": "Scienze Biologiche",
+    "Corsi di laurea + (non lo so)": "Scienze Biologiche",
+    "Costo": "5.000,00€",
+    "Ateneo": "San Raffaele",
+    "min": 5000,
+    "max": 5000
+  },
+  {
+    "Tipologia": "Laurea Magistrale",
+    "Area": "Lingue",
+    "Corsi di laurea + (non lo so)": "Lingue per la Comunicazione Internazionale",
+    "Costo": "Da €1800 a €3600",
+    "Ateneo": "Mercatorum",
+    "min": 1800,
+    "max": 3600
+  },
+  {
+    "Tipologia": "Laurea Magistrale",
+    "Area": "Lingue",
+    "Corsi di laurea + (non lo so)": "Lingue per la Comunicazione Internazionale (Lingua e cultura italiana per stranieri)",
+    "Costo": "Da €1800 a €3600",
+    "Ateneo": "Mercatorum",
+    "min": 1800,
+    "max": 3600
+  },
+  {
+    "Tipologia": "Laurea Magistrale",
+    "Area": "Filologia",
+    "Corsi di laurea + (non lo so)": "Filologia Moderna e Comparata",
+    "Costo": "Da €1800 a €3600",
+    "Ateneo": "Unipegaso",
+    "min": 1800,
+    "max": 3600
   }
 ]

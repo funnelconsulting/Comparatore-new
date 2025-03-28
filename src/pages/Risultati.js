@@ -164,11 +164,17 @@ const Risultati = () => {
       return false;
     }
     return true;
-  })
-  .reduce((minCorso, currentCorso) => {
-    return currentCorso.min < minCorso.min ? currentCorso : minCorso;
-  }, origCorsi[0]);
+  });
 
+  console.log('Corsi filtrati:', migliorCorso);
+
+  const origProva = migliorCorso.reduce((minCorso, currentCorso) => {
+    return currentCorso.min < minCorso.min ? currentCorso : minCorso;
+  }, migliorCorso[0]);
+
+  console.log('Miglior corso selezionato:', origProva);
+  console.log('Desired Degree:', desiredDegree);
+  
   const risultatiCorso = origCorsi
   .filter((corso) => {
     if (degreeType && corso.Tipologia !== degreeType) {
@@ -183,7 +189,7 @@ const Risultati = () => {
     return true;
   });
 
-  const migliorCorsoArray = [migliorCorso];
+  const migliorCorsoArray = [origProva];
 
 
   const schedaExist = (corso) => {
@@ -655,18 +661,18 @@ const Risultati = () => {
           <div>
             <div className='corsi'>
                 <div className='corsi-container'>
-                    {degreeType !== "" && migliorCorsoArray.length > 0 ? (
+                    {degreeType !== "" && desiredDegree !== "" && migliorCorsoArray && migliorCorsoArray.length > 0 ? (
                       <>
-                      {migliorCorsoArray
+                      {migliorCorsoArray && migliorCorsoArray
                     .map((corso, index) =>  {
-                      const ateneo = atenei && atenei.find((item) => item.ateneo && corso.Ateneo && item.ateneo === corso.Ateneo);
+                      const ateneo = atenei && atenei.find((item) => item?.ateneo && corso?.Ateneo && item.ateneo === corso.Ateneo);
                     return (
                       <>
                       <h4 className='best-result' style={{textAlign:'left', marginTop:'1rem', textAlign: 'center'}}>Risultato N.1 su {risultatiCorso?.length}</h4>
                       <div className='border-match-corso'>
                         <img src={migliorcorso} alt='miglior corso comparacorsi' />
                         <div className='single-corso match-corso' key={index}>
-                          {corso && corso.Ateneo && corso.Ateneo == "Unipegaso" || corso.Ateneo == "Mercatorum" || corso.Ateneo == "San Raffaele" ? (
+                          {corso && corso?.Ateneo && corso?.Ateneo == "Unipegaso" || corso?.Ateneo == "Mercatorum" || corso?.Ateneo == "San Raffaele" ? (
                           <>
                             <img className='bollino' src={bolMob} />
                           </>
@@ -680,7 +686,8 @@ const Risultati = () => {
                               ) : ateneo && ateneo.ateneo === "Unipegaso" ? (
                                 <img alt='logo ateneo' src={unipegaso} />
                               ) : corso && corso.Ateneo === "Uninettuno" ? (
-                                <img alt='logo ateneo' src={uninettuno} />
+                                //<img alt='logo ateneo' src={uninettuno} />
+                                null
                               ) : ateneo && ateneo.ateneo === "Mercatorum" ? (
                                 <img alt='logo ateneo' src={unimerc} />
                               ) : ateneo && ateneo.ateneo === "Unifortunato" ? (
@@ -702,9 +709,9 @@ const Risultati = () => {
                               )}
                             </div>
                             <div className='corso-info'>
-                              <p><span style={{fontWeight: '500'}}>Ateneo</span> <b>{corso.Ateneo && corso.Ateneo}</b></p>
-                              <p><span style={{fontWeight: '500'}}>Corso</span> <b>{corso['Corsi di laurea + (non lo so)']}</b></p>
-                              <p><span style={{fontWeight: '500'}}>Settore</span> <b>{corso.Area}</b></p>
+                              <p><span style={{fontWeight: '500'}}>Ateneo</span> <b>{corso?.Ateneo && corso?.Ateneo}</b></p>
+                              <p><span style={{fontWeight: '500'}}>Corso</span> <b>{corso?.['Corsi di laurea + (non lo so)']}</b></p>
+                              <p><span style={{fontWeight: '500'}}>Settore</span> <b>{corso?.Area}</b></p>
                             </div>
                           </div>
                           <div className='bottom-corso'>
@@ -721,7 +728,7 @@ const Risultati = () => {
                                 </div>
                               </div>
                               <div className='tag-corso'>
-                                <p>{atenei.find((item) => item.ateneo && corso.Ateneo && item.ateneo === corso.Ateneo)?.numeroCorsi} sedi</p>
+                                <p>{atenei.find((item) => item?.ateneo && corso?.Ateneo && item.ateneo === corso.Ateneo)?.numeroCorsi} sedi</p>
                                 <p>Online</p>
                                 <p>Riconoscimento CFU</p>
                               </div>
@@ -731,12 +738,15 @@ const Risultati = () => {
                               <p><b>Valutato {ateneo && ateneo.punteggio}</b> sulla base <br /> di <u>{ateneo && ateneo.recensioni} recensioni</u></p>
                           </div>
                         </div>
-                        {schedaExist(corso['Corsi di laurea + (non lo so)']) ? (
-                                <button onClick={() => navigateSchedaCorso(corso['Corsi di laurea + (non lo so)'], ateneo && ateneo.ateneo)}>
+                        {schedaExist(corso?.['Corsi di laurea + (non lo so)']) ? (
+                                <button onClick={() => navigateSchedaCorso(corso?.['Corsi di laurea + (non lo so)'], ateneo && ateneo.ateneo)}>
                                   Vai a scheda corso  <FaArrowRight />
                                 </button>
                               ) : (
-                                <button onClick={async() => {
+                                <button 
+                                id='new-btn-orientatore'
+                                className='orientatore-btn'
+                                onClick={async() => {
                                   const leadData = {
                                     first_name: firstName,
                                     last_name: lastName,
@@ -825,7 +835,8 @@ const Risultati = () => {
                               ) : ateneo && ateneo.ateneo === "Unipegaso" ? (
                                 <img alt='logo ateneo' src={unipegaso} />
                               ) : corso && corso.Ateneo === "Uninettuno" ? (
-                                <img alt='logo ateneo' src={uninettuno} />
+                                //<img alt='logo ateneo' src={uninettuno} />
+                                null
                               ) : ateneo && ateneo.ateneo === "Mercatorum" ? (
                                 <img alt='logo ateneo' src={unimerc} />
                               ) : ateneo && ateneo.ateneo === "Unifortunato" ? (
@@ -881,7 +892,10 @@ const Risultati = () => {
                                   Vai a scheda corso  <FaArrowRight />
                                 </button>
                               ) : (
-                                <button onClick={async() => {
+                                <button 
+                                id='new-btn-orientatore'
+                                className='orientatore-btn'
+                                onClick={async() => {
                                   const leadData = {
                                     first_name: firstName,
                                     last_name: lastName,
@@ -985,7 +999,8 @@ const Risultati = () => {
                           ) : ateneo && ateneo.ateneo === "Unipegaso" ? (
                             <img alt='logo ateneo' src={unipegaso} />
                           ) : corso && corso.Ateneo === "Uninettuno" ? (
-                            <img alt='logo ateneo' src={uninettuno} />
+                            //<img alt='logo ateneo' src={uninettuno} />
+                            null
                           ) : ateneo && ateneo.ateneo === "Mercatorum" ? (
                             <img alt='logo ateneo' src={unimerc} />
                           ) : ateneo && ateneo.ateneo === "Unifortunato" ? (
@@ -1041,7 +1056,10 @@ const Risultati = () => {
                               Vai a scheda corso  <FaArrowRight />
                             </button>
                           ) : (
-                            <button onClick={async() => {
+                            <button 
+                            id='new-btn-orientatore'
+                                className='orientatore-btn'
+                            onClick={async() => {
                               const leadData = {
                                 first_name: firstName,
                                 last_name: lastName,
@@ -1070,7 +1088,10 @@ const Risultati = () => {
         </div>
         <div className='sara-fix'>
           <p>Ultimo step:</p>
-          <button onClick={async() => {
+          <button 
+          id='new-btn-orientatore'
+          className='orientatore-btn'
+          onClick={async() => {
                 const leadData = {
                   first_name: firstName,
                   last_name: lastName,
