@@ -147,6 +147,7 @@ const ComparatoreLeadSystem = () => {
 
     const navigate = useNavigate();
     const [accept, setAccept] = useState(false);
+    const [acceptTerms, setAcceptTerms] = useState(false);
     const [filteredProvinces, setFilteredProvinces] = useState(provinces);
     const [acceptTreatment, setAcceptTreatment] = useState(false);
     const [utmCampaign, setUtmCamp] = useState("");
@@ -329,6 +330,7 @@ const ComparatoreLeadSystem = () => {
         if (desiredDegree === "") missingField.push("Corso di laurea");
         if (degreeType === "") missingField.push("Tipo di laurea");
         if (!accept) missingField.push("Accetta i termini e le condizioni");
+        if (!acceptTerms) missingField.push("Accetta i Termini e Condizioni");
     
         if (missingField.length > 0) {
             setMissingField(missingField);
@@ -694,22 +696,23 @@ const ComparatoreLeadSystem = () => {
                 className={!accept && missingField.includes("Accetta i termini e le condizioni") ? 'campo-mancante-checkbox' : ''}
                 />
                 <label>
-                Accetto la Normativa <a href='https://www.comparacorsi.it/privacy-policy/'>Privacy</a> e <a href='https://www.iubenda.com/termini-e-condizioni/62720878'>Termini e Condizioni</a>.
+                Ho preso visione della <a href='https://www.comparacorsi.it/privacy-policy/'>Privacy Policy</a>.
                 </label>
             </div>
-            <div className='domanda-checkbox dck2' style={{textAlign: 'left', display: 'flex', justifyContent:'center', gap: '0.4rem', paddingLeft: '12px'}}>
+            <div className='domanda-checkbox dck2'>
                 <input
-                id='new-data-processing-checkbox'
+                id='new-terms-checkbox'
                 type='checkbox'
                 required
-                value={acceptTreatment}
-                onChange={() => setAcceptTreatment(!acceptTreatment)}
-                className={!accept && missingField.includes("Accetta i termini e le condizioni") ? 'campo-mancante-checkbox' : ''}
+                value={acceptTerms}
+                onChange={() => setAcceptTerms(!acceptTerms)}
+                className={!acceptTerms && missingField.includes("Accetta i termini e le condizioni") ? 'campo-mancante-checkbox' : ''}
                 />
-                <label style={{textAlign: 'left'}}>
-                Presto il consenso al trattamento dei miei dati personali per comunicarli e ricevere informazioni promozionali da parte di terzi ai sensi dell’art. 2.3 lett. c) dell’<a href='https://www.comparacorsi.it/privacy-policy/'>informativa privacy</a>
+                <label>
+                Ho preso visione dei <a href='https://www.iubenda.com/termini-e-condizioni/62720878'>Termini e Condizioni</a>.
                 </label>
             </div>
+         
         </div>
         {!isLoad ? 
         <button id='comparatore-new-discover-courses-btn' onClick={handleSubmit} className='button-prosegui'>Scopri tutti i corsi</button> : 
