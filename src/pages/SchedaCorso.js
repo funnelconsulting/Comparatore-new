@@ -19,7 +19,7 @@ import servizio4 from '../imgs/servizio4.png';
 import sbocchi from '../imgs/sbocchi.png';
 import info from '../imgs/info.png';
 import unidav from '../imgs/Unidav.png';
-import unipegaso from '../imgs/pegaso.png';
+import unipegaso from '../imgs/pegaso_new.svg';
 import uninettuno from '../imgs/Uninettuno.png';
 import unimerc from '../imgs/Mercatorum.png';
 import unifotunato from '../imgs/giustino fortunato.png';

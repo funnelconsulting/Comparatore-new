@@ -218,10 +218,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.dck1 > input {
-    margin-left: 10px;
-}
-.dck1 > label {
+
+.dck1 > label, .dck2 > label {
     margin-left: 5px;
 }
 .dck2{

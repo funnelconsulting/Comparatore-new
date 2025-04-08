@@ -9,7 +9,7 @@ import axios from 'axios';
 import { atenei } from './atenei';
 import unidav from '../imgs/Unidav.png';
 import stelleverdi from '../imgs/stelleverdi.png';
-import unipegaso from '../imgs/pegaso.png';
+import unipegaso from '../imgs/pegaso-new-tras.png';
 import uninettuno from '../imgs/Uninettuno.png';
 import unimerc from '../imgs/Mercatorum.png';
 import unifotunato from '../imgs/giustino fortunato.png';
