@@ -622,6 +622,7 @@ const ComparatoreLeadSystem = () => {
                     <option value="Forze dell'ordine">Forze dell'ordine</option>
                     <option value="Neo Genitore">Neo Genitore</option>
                     <option value="Dipendenti pubblici">Dipendenti pubblici</option>
+                    <option value="Diversamente abili e DSA">Diversamente abili e DSA</option>
                     <option value="Lavoratore">Lavoratore</option>
                     <option value="Nessuna di queste categorie">Nessuna di queste categorie</option>
                 </select>
