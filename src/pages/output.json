@@ -2060,24 +2060,7 @@
     "min": 4000,
     "max": 5000
   },
-  {
-    "Tipologia": "Laurea Magistrale",
-    "Area": "Sociologia",
-    "Corsi di laurea + (non lo so)": "Sociologia e Ricerca Sociale (Criminologia e Mutamento Sociale)",
-    "Costo": "Da € 4000 a € 5000",
-    "Ateneo": "Unicusano",
-    "min": 4000,
-    "max": 5000
-  },
-  {
-    "Tipologia": "Laurea Magistrale",
-    "Area": "Sociologia",
-    "Corsi di laurea + (non lo so)": "Sociologia e Ricerca Sociale (Sviluppo Economico-Sociale dell’Ambiente e del Territorio)",
-    "Costo": "Da € 4000 a € 5000",
-    "Ateneo": "Unicusano",
-    "min": 4000,
-    "max": 5000
-  },
+ 
   {
     "Tipologia": "Ciclo Unico",
     "Area": "Giurisprudenza",
