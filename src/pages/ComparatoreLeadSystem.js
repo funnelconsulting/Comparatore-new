@@ -447,7 +447,10 @@ const ComparatoreLeadSystem = () => {
         al costo più basso garantito </h1> : <h1 className='h1-tit'>Confronta le migliori <br />
         <font color='#F37E0E'>università online </font>
         al costo più basso garantito </h1>}
-        <h4 className='h1-comp'>Siamo il Comparatore per la formazione <font color='#F37E0E'> migliore d'Italia</font></h4>
+        <h4 className='h1-comp'>
+          Siamo il Comparatore per la formazione <br />
+          <span className='italia-mobile'>migliore d'Italia</span>
+        </h4>
         {/*<div className='come-funziona-comparatore'>
           <h4>Come funziona? <font color='#044B5A'> <b>È semplice:</b></font></h4>
           {isMobile() ? 
