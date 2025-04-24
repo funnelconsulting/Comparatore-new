@@ -443,11 +443,11 @@ const ComparatoreLeadSystem = () => {
           <StepProgress step={1} />
         </div>
         {isMobile() ? <h1 className='h1-tit'>Confronta le migliori <br />
-        <font color='#F37E0E'>università online </font>in <br />
-            pochi passi</h1> : <h1 className='h1-tit'>Confronta le migliori <br />
-        <font color='#F37E0E'>università online </font>in
-            pochi passi</h1>}
-        <h4 className='h1-comp'>Compila il form e ottieni un aiuto gratuito e personalizzato dai  <font color='#F37E0E'>nostri orientatori.</font></h4>
+        <font color='#F37E0E'>università online </font><br />
+        al costo più basso garantito </h1> : <h1 className='h1-tit'>Confronta le migliori <br />
+        <font color='#F37E0E'>università online </font>
+        al costo più basso garantito </h1>}
+        <h4 className='h1-comp'>Siamo il Comparatore per la formazione migliore  <font color='#F37E0E'> migliore </font>d'Italia</h4>
         {/*<div className='come-funziona-comparatore'>
           <h4>Come funziona? <font color='#044B5A'> <b>È semplice:</b></font></h4>
           {isMobile() ? 
@@ -468,6 +468,10 @@ const ComparatoreLeadSystem = () => {
               <img src={require('../imgs/slide333.png')} alt='Slide 3' />
           </div>}
         </div>*/}
+        <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+        <div  class="trustpilot-widget" data-locale="it-IT" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="64b965467cc49ff7fef5cd54" data-style-height="24px" data-style-width="100%">
+          <a href="https://it.trustpilot.com/review/comparacorsi.it" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
         <hr className='separatore' />
         <div className='comparatore-domande' id='form-comparatore-new'>
             <div className='domanda'>
