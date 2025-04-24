@@ -475,10 +475,10 @@
     font-family: 'Inter', sans-serif;
     padding: 0 10px;
     font-weight: 400;
-    width: 50%;
+    width: 54%;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
 }
 .comparatore .h1-tit{
     text-align: center;
@@ -492,6 +492,7 @@
     margin-top: 45px;
 }
 .separatore{
+    margin-top: 12px;
     margin-bottom: 25px;
     width: 40%;
     color: #044B5A;
@@ -611,16 +612,17 @@
     .comparatore .h1-comp{
         text-align: center;
         color: #00414f;
-        font-size: 16px;
+        font-size: 15px;
         font-family: 'Inter', sans-serif;
         padding: 0 10px;
         font-weight: 400;
         width: 90%;
         margin: 0 auto;
-        margin-top: 5px;
-        margin-bottom: 20px;
+        margin-top: 14px;
+        margin-bottom: 24px;
     }
     .separatore{
+        margin-top: 12px;
         margin-bottom: 25px;
         width: 90%;
         color: #044B5A;
@@ -675,7 +677,7 @@
         font-weight: 600;
         width: 90%;
         margin: 0 auto;
-        margin-top: 0px;
+        margin-top: 30px;
     }
     .h2-comp{
         text-align: center;
@@ -749,13 +751,7 @@
     color: #F37E0E;
     display: inline;
   }
-  
-  @media screen and (max-width: 768px) {
-    .italia-mobile {
-      display: block;
-    }
-  }
-  
+
 
 @media screen and (min-width: 601px) and (max-width: 950px)  {
     .comparatore-top{

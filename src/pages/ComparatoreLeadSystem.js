@@ -440,7 +440,7 @@ const ComparatoreLeadSystem = () => {
         </div>
         */}
         <div className='comparatore-top-new'>
-          <StepProgress step={1} />
+       
         </div>
         {isMobile() ? <h1 className='h1-tit'>Confronta le migliori <br />
         <font color='#F37E0E'>università online </font><br />
@@ -448,8 +448,8 @@ const ComparatoreLeadSystem = () => {
         <font color='#F37E0E'>università online </font>
         al costo più basso garantito </h1>}
         <h4 className='h1-comp'>
-          Siamo il Comparatore per la formazione <br />
-          <span className='italia-mobile'>migliore d'Italia</span>
+          Il Comparatore per la formazione 
+          <span className='italia-mobile'> migliore d'Italia</span>
         </h4>
         {/*<div className='come-funziona-comparatore'>
           <h4>Come funziona? <font color='#044B5A'> <b>È semplice:</b></font></h4>
