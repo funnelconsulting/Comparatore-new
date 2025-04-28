@@ -221,9 +221,8 @@ const ParlaConSara = () => {
                 <button onClick={whatsClick}>Scrivile su Whatsapp</button>*/}
             </div>
            
-            <div style={{ maxWidth: '1200px', margin: '50px auto 100px auto' }}>
-              <div class="trustpilot-widget" data-locale="it-IT" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="64b965467cc49ff7fef5cd54" data-style-height="140px" data-style-width="100%" data-stars="5" data-review-languages="it">
-                <a href="https://it.trustpilot.com/review/comparacorsi.it" target="_blank" rel="noopener">Trustpilot</a>
+            <div style={{ maxWidth: '1200px', margin: '50px auto 100px auto', paddingLeft: '16px', paddingRight: '16px' }}>
+              <div class="trustpilot-widget" data-locale="it-IT" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="64b965467cc49ff7fef5cd54" data-style-height="240px" data-style-width="100%" data-stars="1,2,3,4,5" data-review-languages="it">
               </div>
             </div>
 
