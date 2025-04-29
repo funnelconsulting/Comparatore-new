@@ -222,7 +222,7 @@ const ParlaConSara = () => {
             </div>
            
             <div style={{ maxWidth: '1200px', margin: '50px auto 100px auto', paddingLeft: '16px', paddingRight: '16px' }}>
-              <div class="trustpilot-widget" data-locale="it-IT" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="64b965467cc49ff7fef5cd54" data-style-height="240px" data-style-width="100%" data-stars="1,2,3,4,5" data-review-languages="it">
+              <div class="trustpilot-widget" data-locale="it-IT" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="64b965467cc49ff7fef5cd54" data-style-height="240px" data-style-width="100%" data-stars="4,5" data-review-languages="it">
               </div>
             </div>
 
